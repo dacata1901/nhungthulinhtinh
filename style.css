@@ -1,0 +1,29 @@
+body { margin: 0; background: #000; color:#fff; font-weight:100; touch-action:none }
+#toggle-music {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  padding: 6px;
+  transition: transform 0.2s ease;
+  z-index: 999999;
+}
+#toggle-music.playing #icon-note,
+#toggle-music.playing #icon-note-slash {
+  animation: spin 3s linear infinite;
+}
+#toggle-music svg { display: block; }
+.playing #icon-note {
+  display: block !important;
+}
+.playing #icon-note-slash {
+  display: none !important;
+}
+@keyframes spin {
+  from { transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+}
