@@ -59,7 +59,7 @@ function createTextTexture(text) {
   ctx.font = 'bold ' + fontSize + 'px \'Arial\'';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  ctx.fillStyle = '#ff1e78ff';
+  ctx.fillStyle = '#ffff';
   ctx.shadowBlur = 50;
   ctx.shadowColor = 'rgba(255, 255, 255, 0.8)';
   ctx.fillText(text, finalCanvas.width / 2, finalCanvas.height / 2);
@@ -82,7 +82,7 @@ function createHeartTexture(heartImg) {
   const ctx = canvas.getContext('2d');
   
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.shadowColor = '#ff22b4';
+  ctx.shadowColor = '#fff';
   ctx.shadowBlur = 30;
   
   const drawWidth = canvas.width / 2;
